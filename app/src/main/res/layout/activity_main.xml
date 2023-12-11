@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/black">
+    tools:context=".MainActivity">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -12,10 +11,24 @@
         tools:ignore="UselessParent">
 
         <com.github.mikephil.charting.charts.PieChart
-            android:id="@+id/chart"
+            android:id="@+id/chart_pie"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chart_bar"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="240dp" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart_line"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="464dp" />
 
     </FrameLayout>
 
 </RelativeLayout>
+

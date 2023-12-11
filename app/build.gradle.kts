@@ -7,6 +7,8 @@ android {
     namespace = "com.example.chartapp"
     compileSdk = 34
 
+    viewBinding {enable = true}
+
     defaultConfig {
         applicationId = "com.example.chartapp"
         minSdk = 28
